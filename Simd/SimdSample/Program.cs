@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
+using System;
+using System.Numerics;
 
 namespace SimdSample
 {
@@ -7,8 +10,8 @@ namespace SimdSample
 	{
 		static void Main(string[] args)
 		{
-			//var summary = BenchmarkRunner.Run<Program>();
-			AddArrays_Vector(v1, v2);
+			var summary = BenchmarkRunner.Run<Program>();
+			//AddArrays_Vector(v1, v2);
 		}
 
 		[Benchmark]
