@@ -32,7 +32,7 @@ namespace SimdSample
 			var vectSize = Vector<double>.Count;
 
 			int i = 0;
-			for (i = 0; i < v1.Length - vectSize; i += vectSize)
+			for (i = 0; i <= v1.Length - vectSize; i += vectSize)
 			{
 				var va = new Vector<double>(v1, i);
 				var vb = new Vector<double>(v2, i);
