@@ -29,7 +29,7 @@ namespace SimdSample
 		public static double[] AddArrays_Vector(double[] v1, double[] v2)
 		{
 			double[] retVal = new double[v1.Length];
-			var vectSize = Vector<decimal>.Count;
+			var vectSize = Vector<double>.Count;
 
 			int i = 0;
 			for (i = 0; i < v1.Length - vectSize; i += vectSize)
